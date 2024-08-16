@@ -17,6 +17,10 @@
 </mat-card>
 
 <button mat-icon-button (click)="inserir()">
-    <mat-icon>add</mat-icon>
+    @if(modoEdicao){
+      <mat-icon>edit</mat-icon>
+    } @else {
+      <mat-icon>add</mat-icon>
+    }
 </button>
 

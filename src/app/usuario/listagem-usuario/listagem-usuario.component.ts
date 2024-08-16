@@ -22,9 +22,12 @@ export class ListagemUsuarioComponent {
   }
 
   remover(usuarioARemover: Usuario) {
-    // this.usuarioService.remover(usuarioARemover);
-    // this.usuarios = this.usuarios.filter(usuario => usuario.id != usuarioARemover.id);
-    // this.roteador.navigate(['listagem-usuarios']);
+    this.usuarioService.remover(usuarioARemover.id).subscribe({
+      next: () => {
+        this.usuarios = this.usuarios.filter(usuario => usuario.id != usuarioARemover.id);
+        this.roteador.navigate(['listagem-usuarios']);
+      }
+    });
   }
 
   editar(usuarioAEditar: Usuario) {
