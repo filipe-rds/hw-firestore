@@ -3,17 +3,17 @@
     {
       "id": "1",
       "nome": "Gustavo",
-      "idade": 44
+      "idade": "45"
     },
     {
       "id": "2",
       "nome": "Wagner",
-      "idade": 32
+      "idade": "33"
     },
     {
       "id": "3",
       "nome": "Filipe Rodrigues",
-      "idade": "22"
+      "idade": "23"
     }
   ],
   "mensagens": []
